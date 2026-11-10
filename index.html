@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { align-items: center; }
+        .principal { width: min(100%, 1000px); }
+        .portada { text-align: center; padding: 38px 24px; }
+        .etiqueta { display: inline-block; padding: 7px 14px; border-radius: 30px; background: #eee9ff; color: #6650ad; font-size: 13px; font-weight: 700; letter-spacing: 1px; }
+        .portada h1 { font-size: clamp(32px, 6vw, 50px); margin: 18px 0 10px; }
+        .portada p { color: #68738a; font-size: 17px; margin: 0; }
+        .rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 0 28px 30px; }
+        .tarjeta { display: block; text-decoration: none; color: #27334a; padding: 20px; background: #fff; border: 1px solid #e8e4f2; border-radius: 16px; transition: .2s ease; box-shadow: 0 5px 16px rgba(62,54,105,.06); }
+        .tarjeta:hover { transform: translateY(-4px); border-color: #a997e5; box-shadow: 0 10px 22px rgba(62,54,105,.12); }
+        .numero { color: #8a70d6; font-size: 13px; font-weight: 700; }
+        .tarjeta h2 { font-size: 18px; margin: 8px 0; }
+        .tarjeta p { color: #778096; font-size: 14px; margin: 0; }
+        footer { text-align: center; color: #8790a3; padding: 0 15px 25px; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <main class="contenedor principal">
+        <header class="portada">
+            <span class="etiqueta">MI CARPETA DE PRÁCTICAS</span>
+            <h1>Aprendiendo JavaScript</h1>
+            <p>Explora los ejercicios y ejemplos que he realizado durante la clase.</p>
+        </header>
+
+        <section class="rejilla">
+            <a class="tarjeta" href="datos.html"><span class="numero">01 · ENTRADA DE DATOS</span><h2>Datos personales</h2><p>Solicita información mediante ventanas prompt.</p></a>
+            <a class="tarjeta" href="datosPersonales.html"><span class="numero">02 · CONDICIONALES</span><h2>Registro de datos</h2><p>Confirma si deseas ingresar tus datos.</p></a>
+            <a class="tarjeta" href="calificaciones.html"><span class="numero">03 · CONDICIONALES</span><h2>Calificaciones</h2><p>Comprueba si una calificación es aprobatoria.</p></a>
+            <a class="tarjeta" href="suma.html"><span class="numero">04 · OPERADORES</span><h2>Operaciones básicas</h2><p>Realiza suma, resta, multiplicación y división.</p></a>
+            <a class="tarjeta" href="menuDeOperaciones.html"><span class="numero">05 · MENÚ</span><h2>Menú de operaciones</h2><p>Elige una operación matemática.</p></a>
+            <a class="tarjeta" href="signoZodiacal.html"><span class="numero">06 · CONDICIONALES</span><h2>Signo zodiacal</h2><p>Descubre tu signo a partir de tu fecha de nacimiento.</p></a>
+            <a class="tarjeta" href="cicloFor.html"><span class="numero">07 · CICLOS</span><h2>Ciclo for</h2><p>Ejemplo de estructura repetitiva.</p></a>
+            <a class="tarjeta" href="tom.html"><span class="numero">08 · HTML</span><h2>Elemento de prueba</h2><p>Ejemplo sencillo con un encabezado.</p></a>
+            <a class="tarjeta" href="viki.html"><span class="numero">09 · DOM</span><h2>Métodos de JavaScript</h2><p>Ejemplos de selección y modificación de elementos.</p></a>
+        </section>
+        <footer>Prácticas de programación · HTML, CSS y JavaScript</footer>
+    </main>
+</body>
+</html>

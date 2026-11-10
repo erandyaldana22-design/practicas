@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><picture>
+    <source srcset="" type="image/">
+    <img src="" alt="">
+</picture>
+    <meta charset="UTF-8">
+    <meta name5="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datosPersonales</title>
+</head>
+<body>
+    <script>
+        let continua=confirm("Desea agregar datos? ");
+        if(continua){
+        let nombre=(prompt("Ingresa tu nombre: "));
+        let edad=Number(prompt("Ingresa tu edad: "));
+        let especialidad=(prompt("Ingresa tu especialidad: "));
+        let correo=(prompt("Ingresa tu correo: "));
+
+        document.write("Tu nombre es: "+ nombre+" <br>");
+        document.write("Tu edad es: "+ edad+" <br>");
+        document.write("Tu especialida es: "+ especialidad+" <br>");
+        document.write("Tu correo es: "+ correo+" <br>");
+         }else{
+            document.write("No quiciste ingresar datos");     
+           }
+    </script>
+</body>
+</html>
